@@ -1,0 +1,8 @@
+services:
+  app:
+    build: .
+    container_name: minimal-java-v1
+    develop:
+      watch:
+        - path: ./src
+          action: rebuild
