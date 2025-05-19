@@ -2,6 +2,8 @@ services:
   app:
     build: .
     container_name: minimal-java-v1
+    stdin_open: true
+    tty: true
     develop:
       watch:
         - path: ./src
